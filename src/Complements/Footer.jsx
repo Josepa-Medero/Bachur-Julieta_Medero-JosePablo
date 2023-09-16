@@ -19,9 +19,9 @@ const Footer = () => {
   return (
     <footer className={styles}>
       <div className='bg-danger text-white fw-semibold'>VOLVER <FiArrowUp className='text-white'/></div>
-      <div className=' d-flex flex-row justify-content-between container-fluid align-items-center'>        
+      <div className=' d-flex flex-row justify-content-between container-fluid align-items-center w-75'>        
         <img className='logo' src="./images/DH.png" alt='DH-logo' />
-        <div className=' d-flex flex-row justify-content-between align-items-center p-5'>   
+        <div className='d-flex flex-row justify-content-between align-items-center p-5'>   
           <AiFillFacebook className=' mx-2' size={50}/>
           <AiFillInstagram className=' mx-2' size={50}/>
           <FaTiktok className=' mx-2' size={50}/>

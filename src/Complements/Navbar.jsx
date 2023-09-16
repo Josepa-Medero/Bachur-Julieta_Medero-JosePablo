@@ -12,7 +12,9 @@ const Navbar = () => {
   
   const {theme} = state;
   const cambioTema = theme ? 'light' : 'dark';
-  const btnTheme = 'btn rounded'+ cambioTema
+  const btnTheme = 'btn rounded '+ cambioTema
+  const opNav = 'mx-3 '+ cambioTema
+  
 
   const cambioTheme=() => { 
     dispatch({type: 'SWITCH_THEME'});
@@ -26,9 +28,9 @@ const Navbar = () => {
           <span className='text-danger'>D</span>H ODONTO
         </div>
         <div>        
-          <Link className={cambioTema} to = '/'><span>Home</span></Link>
-          <Link className={cambioTema} to = '/contact'>Contact</Link>
-          <Link className={cambioTema} to = '/favs'>Favs</Link>
+          <Link className={opNav} to = '/'><span>Home</span></Link>
+          <Link className={opNav} to = '/contact'>Contact</Link>
+          <Link className={opNav} to = '/favs'>Favs</Link>
           <button className={btnTheme} onClick={cambioTheme}>{theme ? < MdDarkMode className='text-black' size={30}/> : <MdLightMode className='text-warning' size={30}/>}</button>
         </div>
       </div>
