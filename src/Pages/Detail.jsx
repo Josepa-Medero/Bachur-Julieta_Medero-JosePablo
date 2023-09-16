@@ -22,7 +22,6 @@ const Detail = () => {
     }, [])
   
     return (
-<<<<<<< HEAD
     <div className='d-flex flex-column justify-content-center flex-wrap mt-5'>
         <h1>Informacion dentista</h1>
         <div className='m-5 '>
@@ -50,17 +49,6 @@ const Detail = () => {
         </div>
         
     </div>
-=======
-    <>
-        <h1>Informacion dentista</h1>
-        {loading ? 'Cargando...' : <>
-            <h1>Name: {name}</h1>
-            <h3>Email: {email}</h3>
-            <h3>Phone: {phone}</h3>
-            <h3>Website: {website}</h3>
-        </>}
-    </>
->>>>>>> 70ae104d9cb0a7f94dd0aa13af3f4e80f6ee83ee
   )
 }
 

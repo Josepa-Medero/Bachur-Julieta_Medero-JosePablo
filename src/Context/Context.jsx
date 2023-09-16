@@ -2,10 +2,6 @@ import axios from "axios";
 import { createContext, useContext, useEffect, useReducer} from "react"
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 70ae104d9cb0a7f94dd0aa13af3f4e80f6ee83ee
 const GlobalContext = createContext()
 
 const localFavs = JSON.parse(localStorage.getItem('favs'))
@@ -33,7 +29,6 @@ const reducer = (state, action) => {
   }
 }
 
-<<<<<<< HEAD
 
 const GlobalProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState)  
@@ -44,18 +39,6 @@ const GlobalProvider = ({ children }) => {
     axios (url)
     .then(res => {dispatch({type: 'GET_DENTISTAS', payload: res.data})})
     .catch(err => console.log(err))
-=======
-const GlobalProvider = ({ children }) => {
-const [state, dispatch] = useReducer(reducer, initialState)
-
-const url='https://jsonplaceholder.typicode.com/users'
-
-  useEffect(() => {
-    axios (url)
-    .then(res => {
-    dispatch({type: 'GET_DENTISTAS', payload: res.data})})
-  .catch(err => console.log(err))
->>>>>>> 70ae104d9cb0a7f94dd0aa13af3f4e80f6ee83ee
   }, [])
 
   useEffect(() => {
